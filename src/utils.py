@@ -295,11 +295,13 @@ def run_harmony_batch_correction(
     """
     import harmonypy as hm
 
-    pca_matrix = adata.obsm["X_pca"]
+    pca_matrix = adata.obsm["X_pca"].astype(float)
     meta = adata.obs[[batch_key]]
 
     harmony_out = hm.run_harmony(pca_matrix, meta, batch_key)
-    adata.obsm["X_pca_harmony"] = harmony_out.Z_corr.T
+    Z = harmony_out.Z_corr
+    # Z_corr is (n_components, n_cells) -> transpose to (n_cells, n_components)
+    adata.obsm["X_pca_harmony"] = Z.T if Z.shape[1] == adata.n_obs else Z
 
     print(f"Harmony batch correction done on key='{batch_key}'")
     return adata
