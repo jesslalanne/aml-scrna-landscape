@@ -1,0 +1,35 @@
+# Shared virtual environment: ven-aml-tcga
+# Located at: Projets Github/ven-aml-tcga/
+# Shared between aml-tcga-genomics and aml-scrna-landscape
+#
+# Activate:
+#   source ../ven-aml-tcga/bin/activate      # Mac/Linux
+#   ..\ven-aml-tcga\Scripts\activate         # Windows
+#
+# Install new scRNA packages into the existing env:
+#   pip install scanpy anndata harmonypy leidenalg igraph xgboost shap GEOparse
+
+name: ven-aml-tcga
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      # ── Already present from aml-tcga-genomics ──
+      - numpy
+      - pandas
+      - matplotlib
+      - seaborn
+      - scikit-learn
+      - jupyter
+      - jupyterlab
+      # ── Added for aml-scrna-landscape ──
+      - scanpy>=1.9.0
+      - anndata>=0.9.0
+      - harmonypy>=0.0.6
+      - leidenalg>=0.10.0
+      - igraph>=0.10.0
+      - xgboost>=2.0.0
+      - shap>=0.44.0
+      - GEOparse>=2.0.0

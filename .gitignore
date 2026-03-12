@@ -1,0 +1,38 @@
+# Data files — never commit raw genomic data
+data/raw/
+data/*.h5ad
+data/*.csv
+data/*.tsv
+data/*.gz
+data/*.zip
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Environments
+.env
+.venv
+env/
+venv/
+*.conda
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Figures — optional: commit only final exports
+# figures/
+
+# Large outputs
+*.h5
+*.loom
