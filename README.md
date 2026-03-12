@@ -1,13 +1,13 @@
-# AML Single-Cell Landscape
+# 🧬 AML Single-Cell Landscape
 
 **Single-cell RNA-seq analysis of Acute Myeloid Leukemia — cell type annotation, differentiation trajectories, and malignant cell classification.**
 
-This project is the second part of a portfolio focused on computational oncogenomics applied to AML.  
+This project is the second part of a portfolio focused on computational oncogenomics applied to AML.
 It extends the bulk RNA / mutation analysis from [`aml-tcga-genomics`](https://github.com/YOUR_USERNAME/aml-tcga-genomics) by going to single-cell resolution.
 
 ---
 
-## Biological question
+## 🔬 Biological question
 
 > *What is the cellular composition of AML tumors, at which differentiation stage are malignant cells blocked, and can we classify them computationally?*
 
@@ -15,9 +15,9 @@ AML is characterized by a differentiation block: hematopoietic progenitors fail 
 
 ---
 
-## Dataset
+## 📂 Dataset
 
-**GSE116256 — van Galen et al., Cell 2019**  
+**GSE116256 — van Galen et al., Cell 2019**
 *"Single-Cell RNA-Sequencing Reveals a Hierarchy of Leukemic Cell States and Their Relationship to Normal Hematopoiesis"*
 
 - 38,410 single cells from **16 AML patients** + 5 healthy donors
@@ -28,7 +28,7 @@ AML is characterized by a differentiation block: hematopoietic progenitors fail 
 
 ---
 
-## Project structure
+## 🗂️ Project structure
 
 ```
 aml-scrna-landscape/
@@ -50,7 +50,7 @@ aml-scrna-landscape/
 
 ---
 
-## Analysis pipeline
+## ⚙️ Analysis pipeline
 
 | Notebook | Topic | Key tools |
 |---|---|---|
@@ -62,7 +62,7 @@ aml-scrna-landscape/
 
 ---
 
-## Key results
+## 📊 Key results
 
 *(To be updated as analysis progresses)*
 
@@ -74,7 +74,7 @@ aml-scrna-landscape/
 
 ---
 
-## Environment setup
+## 🛠️ Environment setup
 
 This project shares the virtual environment `ven-aml-tcga` with [`aml-tcga-genomics`](https://github.com/YOUR_USERNAME/aml-tcga-genomics).
 
@@ -104,7 +104,7 @@ Projets Github/
 
 ---
 
-## References
+## 📚 References
 
 - van Galen P. et al. *Single-Cell RNA-Sequencing Reveals a Hierarchy of Leukemic Cell States and Their Relationship to Normal Hematopoiesis.* Cell, 2019. https://doi.org/10.1016/j.cell.2019.01.031
 - Wolf F.A. et al. *SCANPY: large-scale single-cell gene expression data analysis.* Genome Biology, 2018.
@@ -112,7 +112,14 @@ Projets Github/
 
 ---
 
-## Author
+## 👩‍💻 About
 
-Portfolio project — AML Computational Oncogenomics  
-Part of a career transition from aerospace data science (Airbus Defence & Space) to computational biology.
+Data Scientist specializing in cancer genomics, with a focus on Acute Myeloid Leukemia (AML). I analyze tumor genomic data — mutational profiling, somatic variant analysis, survival modeling — to contribute to a better understanding of cancer biology and treatment response.
+
+Currently working at Airbus Defence & Space, I am in parallel building expertise in computational oncogenomics on TCGA data, with the goal of joining a specialized team in cancer genomics.
+
+I am actively looking for opportunities within oncology research teams — particularly at **l'Oncopole de Toulouse** and affiliated INSERM/CNRS units.
+
+📧 Reach me via [LinkedIn](https://www.linkedin.com/in/jessicalalanne/) | [GitHub](https://github.com/jesslalanne)
+
+---
